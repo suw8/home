@@ -38,7 +38,7 @@ body{background: #FFF;}
 
 /* 主体—自述 intro */
 .main-intro{padding-top: 90px; padding-bottom: 130px;}
-.main-intro p{font-size: 16px; color: #ababab; line-height: 28px;}
+.main-intro p{font-size: 12px; color: #ababab; line-height: 24px;}
 .main-intro p.title
 ,.main-works p.title
 ,.main-about p.title{color: #484848; font-size: 24px; text-align: center; line-height: 1.5em;padding-bottom: 50px;}
@@ -50,7 +50,7 @@ body{background: #FFF;}
 ,.main-about p.title i{font-style:normal;font-size:16px;color:#ababab;}
 .main-intro .content{border: 1px solid #DEDEDE; padding: 30px 36px 0 36px; text-align: center; transition: 0.3s;}
 .main-intro .content p.label{font-size: 18px; color: #939393; line-height: 46px; padding-top: 6px;}
-.main-intro .content a{font-size: 18px; color: #a1d8cb; line-height: 68px;}
+.main-intro .content a{font-size: 16px; color: #a1d8cb; line-height: 68px;}
 .main-intro .content:hover{box-shadow: 0 0 3px 3px #EEE; transition: 0.3s;}
 .main-intro .content img{transition: 2s;}
 .main-intro .content img:hover{transform: rotateY(180deg);}
@@ -63,8 +63,8 @@ body{background: #FFF;}
 .main-works .content .content-left img{width: 100%;}
 .main-works .content .content-right{box-sizing: border-box; background: #FFF; padding: 58px 40px 0 48px; width: 50%; height: 100%; position: absolute; top: 0; right: 0; transition: 0.3s; overflow: hidden;}
 .main-works .content .content-right p{color: #adadad; line-height: 32px; overflow: hidden; text-overflow: ellipsis;}
-.main-works .content .content-right p.label{font-size: 16px; color: #4a4a4a;}
-.main-works .content .content-right span{display: block; width: 50px; height: 2px; background: #2cb6a1; margin-bottom: 23px;} 
+.main-works .content .content-right p.label{font-size: 16px; color: #4a4a4a;padding-top:15px;}
+.main-works .content .content-right span{display: block; width: 50px; height: 2px; background: #2cb6a1; margin:5px 0 16px 0;} 
 .main-works .content .content-right:hover{box-shadow: 2px 2px 2px #EEE; transition: 0.3s;}
 .main-works .service-more{padding-top: 80px; padding-bottom: 80px; text-align: center;}
 .main-works .service-more a{padding: 10px 62px; font-size: 23px; line-height: 46px;color: #FFF; background: #7fd3c6; border-radius: 3px;}
@@ -74,19 +74,19 @@ body{background: #FFF;}
 .main-about{padding-top: 90px; padding-bottom: 130px;}
 .main-about p{font-size: 16px; color: #ababab; line-height: 28px;}
 .main-about .tabJob{display:block;}
-.main-about .tabJob .content{padding: 0 0 40px 20px; border: 1px solid #e2e2e2; border-top: 4px solid #65d0c5; margin-top: 90px;}
+.main-about .tabJob .content{padding: 0 20px 40px 20px; border: 1px solid #e2e2e2; border-top: 4px solid #65d0c5; margin-top: 90px;}
 .main-about .tabJob .content:first-child{margin-top: 10px;}
-.main-about .tabJob .content p{font-size: 18px; line-height: 40px;}
-.main-about .tabJob .content p.title{font-size: 24px; color: #545454; line-height: 60px; margin-left:-20px;padding-bottom: 0px;}
+.main-about .tabJob .content p{font-size: 16px; line-height: 40px;}
+.main-about .tabJob .content p.title{font-size: 24px; color: #545454; line-height: 60px; padding-bottom: 0px;}
 .main-about .tabJob .content ol{padding-left: 20px; list-style-type: none; counter-reset: sectioncounter;}
-.main-about .tabJob .content ol li{color: #8d8d8d; font-size: 16px; line-height: 30px;}
+.main-about .tabJob .content ol li{color: #8d8d8d; font-size: 14px; line-height: 30px;}
 .main-about .tabJob .content ol li:before {content: counter(sectioncounter) "、"; counter-increment: sectioncounter;}
 
 
 /* 底部-联系 contact */
 .footer{padding-bottom: 70px; background: #5e6664;}
 .footer .footer-web{padding-top: 50px; padding-bottom: 63px;}
-.footer .footer-web a{color: #a5aaa9; line-height: 22px; margin-right: 20px; transition: 0.3s;}
+.footer .footer-web a{color: #a5aaa9; line-height: 22px; margin-right: 8px; transition: 0.3s;}
 .footer .footer-web a:hover{color: #dce1e0; transition: 0.3s;}
 .footer .footer-contact{color: #FFF;}
 #erweima img{max-width:100%;}
@@ -98,7 +98,7 @@ body{background: #FFF;}
   #banner .panel p{font-size:24px;line-height: 1.3em;}
   #banner .panel p.title{font-size:32px;}
   .main-works .content .content-right{padding: 0px 10px 0 10px;}
-  .main-works .content .content-right p{line-height: 24px;}
+  .main-works .content .content-right p{font-size:12px;line-height: 24px;}
 }
 /* 小屏幕 */
 @media screen and (min-width: 768px){
@@ -110,12 +110,16 @@ body{background: #FFF;}
   .nav .nav-list button{display: none;}
   .nav .layui-nav{width: auto; position: absolute; top: 0;right:-25px; padding: 0 5px; border-radius: 0; margin: 0;}
   .nav .layui-nav .layui-nav-item{display: inline-block; margin:0 55px; line-height: 80px;}
+  .main-intro p{font-size: 16px; color: #ababab; line-height: 28px;}
   .main-intro p.title
   ,.main-about p.title
   ,.main-works p.title{font-size: 36px;}
-  .main-about .tabJob .content p{font-size: 24px; line-height: 50px;}
+  .main-works .content .content-right p{font-size:14px;line-height: 32px;}
+  .main-works .content .content-right p.label{padding-top:0px;}
+  .main-about .tabJob .content p{font-size: 20px; line-height: 50px;}
   .main-about .tabJob .content p.title{font-size: 30px; line-height: 90px;}
-  .main-about .tabJob .content ol li{font-size: 20px; line-height: 60px;}
+  .main-about .tabJob .content ol li{font-size: 18px; line-height: 60px;}
+  .footer .footer-web a{margin-right: 20px;}
   .footer .footer-contact .contact-top
   ,.footer .footer-contact .contact-bottom{padding-left:20px;}
 }
