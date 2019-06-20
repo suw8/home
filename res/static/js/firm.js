@@ -29,11 +29,11 @@ layui.define(['jquery', 'element', 'carousel', 'laypage'], function(exports){
          //,anim: 'updown' //切换动画方式
       });
   });
-  //窗口变化是重新加载
-  $(window).resize(function () {
-  // setBanner();
-  window.location.reload()
-  })
+//   //窗口变化是重新加载
+//   $(window).resize(function () {
+//   // setBanner();
+//   window.location.reload()
+//   })
 
   //滚动监听
   $(window).scroll(function() {
