@@ -132,7 +132,7 @@
 	.imgList h3 span{font-size:12px;color:#999;}
 	.imgList ul{list-style:none;margin:0;padding:0;}
 	.imgList ul li{width:80px;padding:5px;float:left;}
-	.imgList ul li img{max-width:100%;height:auto;}
+	.imgList ul li img{max-width:100%;height:auto;cursor:pointer;}
 
 
 
@@ -174,11 +174,11 @@
 	<div class="imgList">
 		<h3>示例图片 <span>请点击图片获取图片地址</span></h3>
 		<ul>
-			<li><a target="_blank" href="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntfl6oj308c08c3yr.jpg"><img src="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntfl6oj308c08c3yr.jpg"/></a></li>
-			<li><a target="_blank" href="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntgbpvj308c08cgm3.jpg"><img src="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntgbpvj308c08cgm3.jpg"/></a></li>
-			<li><a target="_blank" href="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntgta9j308c08cwev.jpg"><img src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntgta9j308c08cwev.jpg"/></a></li>
-			<li><a target="_blank" href="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559nteaksj308c08cwes.jpg"><img src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559nteaksj308c08cwes.jpg"/></a></li>
-			<li><a target="_blank" href="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntelroj308c08cwes.jpg"><img src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntelroj308c08cwes.jpg"/></a></li>
+			<li><img class="imgBtn" src="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntfl6oj308c08c3yr.jpg"/></li>
+			<li><img class="imgBtn" src="http://wx2.sinaimg.cn/mw690/006zx73cgy1g559ntgbpvj308c08cgm3.jpg"/></li>
+			<li><img class="imgBtn" src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntgta9j308c08cwev.jpg"/></li>
+			<li><img class="imgBtn" src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559nteaksj308c08cwes.jpg"/></li>
+			<li><img class="imgBtn" src="http://wx3.sinaimg.cn/mw690/006zx73cgy1g559ntelroj308c08cwes.jpg"/></li>
 		</ul>
 	</div>
 	
@@ -193,6 +193,7 @@
 	var imgURL=document.getElementById("imgURL");
 	var start=document.getElementById("start");
 	var reset=document.getElementById("reset");
+	var imgBtn=document.getElementsByClassName("imgBtn");
 	for(var i=1; i<10;i++){
 		d[i]=document.getElementById("d"+i); //获取元素，并存在数组d
 	}
@@ -207,6 +208,10 @@
 	start.addEventListener('click',function(){starGame();});
 	reset.addEventListener("click",function(){resetGame();});
 	imgURL.addEventListener("change",function(){useImg();});
+	for(var j=0;j<imgBtn.length; j++){
+		imgBtn[j].addEventListener("click",function(){getImg(this);});
+	}
+	
 	// 目标位置为n时，哪个位置可以移动
 	var d_direct=new Array(
 		[0],
@@ -346,7 +351,7 @@
 		pause=true;
 	}
 	
-	//
+	// 图片拼图
 	function useImg(){
 		if(imgURL.value!=''){
 			for(var i=1; i<10; i++){
@@ -358,6 +363,11 @@
 		}
 	}
 	
+	// 获取示例图片
+	function getImg(element){
+		imgURL.value=element.getAttribute("src");
+		useImg();
+	}
 	// window.onload=function(){
 	// 	resetGame();
 	// }
