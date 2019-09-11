@@ -1,237 +1,1629 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <title>宅久见-HOME</title>
-  <link rel="stylesheet" href="res/layui/css/layui.css">
-  <link rel="stylesheet" href="res/static/css/index.css">
+    <meta charset="UTF-8">
+    <title>仿-腾讯课堂</title>
+    <link rel="stylesheet" href="./style/main.css"/>
 </head>
 <body>
-  <!-- ===== nav部分 ===== -->
-  <div class="nav index">
-    <div class="layui-container">
-      <!-- 公司logo -->
-      <div class="nav-logo">
-        <a href="index.html">
-          <img src="res/static/img/logo.png" alt="宅久见">
-        </a>
-      </div>
-      <div class="nav-list">
-        <button>
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="layui-nav" lay-filter="">
-          <li class="layui-nav-item layui-this"><a href="index.html">HOME</a></li>
-          <li class="layui-nav-item"><a href="#intro">INTRO</a></li>
-          <li class="layui-nav-item"><a href="#works">WORKS</a></li>
-          <li class="layui-nav-item"><a href="#about">ABOUT</a></li>
-          <li class="layui-nav-item"><a href="#contact">CONTACT</a></li>
+    <!-- 主页及测试页入口 -->
+    <div class="nav-top">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="puzzleGame.html" target="_blank">拼图游戏</a></li>
         </ul>
-      </div>
     </div>
-  </div>
-  <!-- banner部分 -->
-  <div class="banner-top">
-    <div class="layui-carousel" id="banner">
-      <div carousel-item>
-        <div>
-          <img src="res/static/img/banner1.jpg">
-          <div class="panel">
-            <p class="title">宅久见</p>
-            <p>A DESIGNER LOVER</p>
-          </div>
-        </div>
-        <div>
-          <img src="res/static/img/banner2.jpg">
-          <div class="panel">
-            <p class="title">宅久见</p>
-            <p>A DESIGNER LOVER</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- === Test your HTML CODE below this line === -->
 
-  <!-- ===== main部分 ===== -->
-  <!-- intro -->
-  <div class="main-intro" id="intro">
-    <div class="layui-container">
-      <p class="title">一个前端爱好者的<span>自述</span><br /><i>兴趣是最好的老师，对于技术本人始终保持着高度的热情，爱好探索新世界</i></p>
-      <div class="layui-row layui-col-space25">
-        <div class="layui-col-sm6 layui-col-md3">
-          <div class="content">
-            <div><img src="res/static/img/Big_icon1.png"></div>
-            <div>
-              <p class="label">PhotoShop</p>
-              <p>使用得较多的技能，熟练度达 80% 以上；能编辑美化各种图片以及界面UI处理等</p>
-            </div>
-            <a href="javascript:;">了解更多 ></a>
-          </div>
-        </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="res/static/img/Big_icon2.png"></div>
-            <div>
-              <p class="label">HTML / CSS</p>
-              <p>看家本领，能将各种UI设计稿转换成前端代码，优化显示效果及网站搜索排名等等</p>
-            </div>
-            <a href="javascript:;">了解更多 ></a>
-          </div>
-        </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="res/static/img/Big_icon3.png"></div>
-            <div>
-              <p class="label">JavaScript</p>
-              <p>能实现基本的交互效果，同时始终保持着热忱的学习态度，了解各种最新技术框架</p>
-            </div>
-            <a href="javascript:;">了解更多 ></a>
-          </div>
-        </div>
-        <div class="layui-col-sm6 layui-col-md3 ">
-          <div class="content">
-            <div><img src="res/static/img/Big_icon4.png"></div>
-            <div>
-              <p class="label">响应式布局</p>
-              <p>移动优先，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联的潮流</p>
-            </div>
-            <a href="javascript:;">了解更多 ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="container">
+        <!-- ===头部=== -->
+        <div class="header clearfix">
+            <a href="index.html" class="header-logo" title="腾讯课堂_专业的在线教育平台"><img src="https://8.url.cn/edu/edu_modules/edu-ui/img/bg/logo-3x.46efb146.png#unsprite" /></a>
 
-  <!-- works -->
-  <div class="main-works" id="works">
-    <div class="layui-container">
-      <p class="title">一个设计爱好者的<span>作品</span></p>
-      <div class="layui-row layui-col-space25 layui-col-space80">
-        <div class="layui-col-sm6">
-          <div class="content">
-            <div class="content-left"><img src="res/static/img/works_img1.jpg"></div>
-            <div class="content-right">
-              <p class="label">三文鱼品牌设计</p>
-              <span></span>
-              <p>三文鱼后更名三文渔，初衷是职场达人指导职场新人成为达人，如此循环。LOGO设计采取了首字母 S 与代表世界循环的八卦结合的方法，颜色选用了代表希望及活力的明黄色。</p>
-            </div>
-          </div>
-        </div>
-        <div class="layui-col-sm6">
-          <div class="content">
-            <div class="content-left"><img src="res/static/img/works_img2.jpg"></div>
-            <div class="content-right">
-              <p class="label">腾邦大学APP图标</p>
-              <span></span>
-              <p>学士帽与牛元素形象结合构成整个图标的设计，充分体现了腾邦大学在牛武文化传播中的地位；其中，首字母D和X的造型还可以分开做延展，表现效果依然好。</p>
-            </div>
-          </div>
-        </div>
-        <div class="layui-col-sm6">
-          <div class="content">
-            <div class="content-left"><img src="res/static/img/works_img3.jpg"></div>
-            <div class="content-right">
-              <p class="label">创客空间LOGO设计</p>
-              <span></span>
-              <p>轰轰创客空间，初始的想法是牛人的空间、牛人的聚集地，因此有了草稿版的设计；最终为了突出火爆的热度、创作热情等，采用了首字母H和火焰元素的结合完成整个设计。</p>
-            </div>
-          </div>
-        </div>
-        <div class="layui-col-sm6">
-          <div class="content">
-            <div class="content-left"><img src="res/static/img/works_img4.jpg"></div>
-            <div class="content-right">
-              <p class="label">字体设计作品</p>
-              <span></span>
-              <p>有一天，朋友遇到感情问题，陪他喝了一个晚上，后来就有了这个字体设计。藕断丝连的念想，纷纷扰扰...谁对谁错已分不清，也不必再分清，关上一扇门，道一声珍重。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-more"><a href="">查看更多</a></div>
-    </div>
-  </div>
+            <div class="header-category">
+                <div class="cate-text">
+                    <i class="icon-font"></i>
+                    <a href="javascript:;" title="分类">分类</a>
+                </div>
+                <div class="cate-content-nav">
+                    <ul>
+                        <li class="no-border">
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">IT·互联网</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">前端开发</a>
+                                <a href="javascript:;">Java</a>
+                                <a href="javascript:;">产品策划</a>
+                            </div>
+                        </li>
 
-  <!-- about -->
-  <div class="main-about" id="about">
-    <div class="layui-container">
-      <div class="layui-row">
-        <p class="title"><span>关于</span>过去的人生履历</p>
-        <div class="tabJob">
-          <div class="content">
-            <p class="title">平面设计师</p>
-            <p>> 2013.4 ~ 至今</p>
-            <ol>
-              <li>凭着大学期间掌握的PS技能在彩宏画艺广告公司入行平面设计；</li>
-              <li>海报招贴、画册、LOGO设计、效果图、照片修图、印刷厂跟单等都有经验；</li>
-              <li>2015年2月份以一个平面设计师身份入职腾邦；</li>
-              <li>期间跟过多个创业项目，参与过工作场地的设计跟踪、开业活动物料的设计与筹备等，设计过项目BP并拿到天使轮投资；</li>
-              <li>由于学习及解决问题能力较强，兼任了半个IT运维，能独立解决办公场地的网络及各种办公设备遇到的问题。</li>
-            </ol>
-          </div>
-          <div class="content">
-            <p class="title">工艺工程师</p>
-            <p>> 2012.9 ~ 2013.3</p>
-            <ol>
-              <li>负责日常跟踪各条生产线、及时发现问题解决问题；</li>
-              <li>研究、调整工序，提高生产效率；</li>
-              <li>协助研究新工艺，编写操作文档等。</li>
-            </ol>
-          </div>
-          <div class="content">
-            <p class="title">美好的校园时代</p>
-            <p>> 2008.9 ~ 2012.9</p>
-            <ol>
-              <li>最爱呆的地方是图书馆及实验室；</li>              
-              <li>最喜欢的运动是跑步及羽毛球；</li>
-              <li>最常干的事情是探索及思考。</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ===== footer部分 ===== -->
-  <!-- contact-->
-  <div class="footer" id="contact">
-    <div class="layui-container">
-      <p class="footer-web">
-        <a href="index.html">HOME</a>
-        <a href="#intro">INTRO</a>
-        <a href="#works">WORKS</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
-        <a href="test.html">Test</a>
-      </p>
-      <div class="layui-row footer-contact">
-        <div class="layui-col-sm2 layui-col-lg1" id="erweima"><img src="res/static/img/erweima.jpg" width="100px" height="100px"></div>
-        <div class="layui-col-sm10 layui-col-lg11">
-          <div class="layui-row">
-            <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
-              <p class="contact-top"><i class="layui-icon layui-icon-login-qq"></i>&nbsp;欢迎随时扫描二维码Q我</p>
-              <p class="contact-bottom"><i class="layui-icon layui-icon-release"></i>&nbsp;1569617326@qq.com</span></p>
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">设计·创作</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">平面设计</a>
+                                <a href="javascript:;">UI设计</a>
+                                <a href="javascript:;">室内设计</a>
+                            </div>
+                        </li>
+                        
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">电商·营销</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">电商平台</a>
+                                <a href="javascript:;">跨境电商</a>
+                                <a href="javascript:;">社交电商</a>
+                            </div>
+                        </li>
+                        
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">职业·考证</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">公务员</a>
+                                <a href="javascript:;">教师考试</a>
+                                <a href="javascript:;">建筑工程</a>
+                            </div>
+                        </li>
+                        
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">升学·考研</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">考研</a>
+                                <a href="javascript:;">大学</a>
+                                <a href="javascript:;">高中</a>
+                                <a href="javascript:;">初中</a>
+                            </div>
+                        </li>
+                        
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">兴趣·生活</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">摄影</a>
+                                <a href="javascript:;">乐器演奏</a>
+                                <a href="javascript:;">美妆</a>
+                                <a href="javascript:;">育儿</a>
+                            </div>
+                        </li>
+                        
+                         <li>
+                            <div class="cate-content-nav-first">
+                                <i class="icon-font"></i>
+                                <h3><a href="javascript:;">语言·留学</a></h3>
+                            </div>
+                            <div class="cate-content-nav-hot">
+                                <a href="javascript:;">实用英语</a>
+                                <a href="javascript:;">雅思</a>
+                                <a href="javascript:;">托福</a>
+                                <a href="javascript:;">英语四六级</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
-              <p class="contact-top"><span class="right">CHINA · 深圳市福田区</span></p>
-              <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2019-2021 宅久见 </span></p>
+
+            <div class="header-search">
+                <div class="search-mod clearfix">
+                    <a class="search-dropdown">
+                        <span>课程<i class="icon-font"></i></span>
+                    </a>
+                    <input type="text" placeholder="搜索课程" class="search-input" />
+                    <a class="search-btn">
+                        <i class="icon-font"></i>
+                    </a>
+                </div>
+                <div class="search-list" id="search-list">
+                    <h3>热门搜索</h3>
+                    <p>腾讯课堂设计大师</p>
+                    <p>JavaScript</p>
+                    <p>PhotoShop</p>
+                </div>
             </div>
-          </div>
+
+            <ul class="header-nav">
+                <li><a href="javascript:;">开课/合作</a>
+                    <ul class="join-list nav-list">
+                        <li><a href="javascript:;">个人开课</a></li>
+                        <li><a href="javascript:;">机构开课</a></li>
+                        <li><a href="javascript:;">分销开课</a></li>
+                        <li><a href="javascript:;">企业合作</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">下载</a>
+                    <ul class="download-list nav-list">
+                        <li><a href="javascript:;">Win客户端</a></li>
+                        <li><a href="javascript:;">Mac客户端</a></li>
+                        <li><a href="javascript:;">App客户端</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">私信</a></li>
+                <li><a href="javascript:;">登录</a></li>
+            </ul>
         </div>
-      </div>
+
+        <div class="banner" id="banner">
+            <div class="mod-login">
+                <div class="mod-login-user" id="mod-login-suer">
+                    <p class="mod-login-tips">跟进你的学习进度</p>
+                    <div class="mod-login-img"></div>
+                </div>
+                <a href="javascript:;" class="mod-login-btn">登录</a>
+            </div>
+            <div class="banner-list">
+                <ul class="banner-list-slide" id="banner-list-slide">
+                    <li style="background-color: #006dce">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/432f7f6716d44123bc375145030e1093/0" alt="改写人生源代码 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #040404">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/d0bbe9d0890343128f6de3e6b8d49345/0?tp=jpg" alt="前端开发 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #030303">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/83f6decc2b9e4ea898dfbd644de88a36/0?tp=jpg" alt="前端开发 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #000206">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/37d7d58946e848d79380dccfd45922b3/0?tp=jpg" alt="前端 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #140031">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/9e96327efe2e4e2a871f3dc426787a6c/0?tp=jpg" alt="建造工程 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #2f4fb6">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/f5bc8e5b736f4170a0a6f3adecb51cfa/0?tp=jpg" alt="建造工程 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #ffb71f">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/5bea5e5c8ee74bd095affcab3623c735/0?tp=jpg" alt="建造工程 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                    <li style="background-color: #ce2b2e">
+                        <a href="javascript:;">
+                           <img src="https://p.qpic.cn/qqconadmin/0/c674e1831507435dadc6222f436e0b78/0?tp=jpg" alt="建造工程 在线精品课程" class="banner-slide-img">
+                        </a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="banner-list-prev slide-arrow"><span class="opacity-bg"></span><i class="icon-font"></i></a>
+                <a href="javascript:;" class="banner-list-next slide-arrow"><span class="opacity-bg"></span><i class="icon-font"></i></a>
+                <ul class="banner-list-dots" id="banner-list-dots">
+                    <li id="banner-slide00"><span>1</span></li>
+                    <li id="banner-slide01"><span>2</span></li>
+                    <li id="banner-slide02"><span>3</span></li>
+                    <li id="banner-slide03"><span>4</span></li>
+                    <li id="banner-slide04"><span>5</span></li>
+                    <li id="banner-slide05"><span>6</span></li>
+                    <li id="banner-slide06"><span>7</span></li>
+                    <li id="banner-slide07"><span>8</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ===主体=== -->
+        <div class="main">
+            <div class="cate-tab" id="cat-tab">
+                <ul class="cate-tab-list clearfix">
+                    <li class="cate-tab-active" cate-tab-id="0">精选推荐</li>
+                    <li cate-tab-id="1">编程语言</li>
+                    <li cate-tab-id="2">平面设计</li>
+                    <li cate-tab-id="3">职业技能</li>
+                    <li cate-tab-id="4">高中</li>
+                    <li cate-tab-id="5">实用英语</li>
+                    <li cate-tab-id="6">文艺修养</li>
+                </ul>
+                <div class="cate-tab-btn">
+                    <a href="javascript:;">修改兴趣</a>
+                </div>
+            </div>
+
+            <!-- 精选推荐 -->
+            <div class="cate-content-main" id="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+                    
+                    <!-- 图片广告 -->
+                    <div class="custom-ad">
+                        <a><img src="https://p.qpic.cn/qqconadmin/0/e85355fd1ef0405bbdd296322f99d185/0"></a>
+                    </div>
+
+                    <!-- 自定义模块-IT互联网热门课程 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>IT互联网热门课程</h2>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAvyRQZWBLTf60c3uwACPVx9nFtzUT2JwEWLK708gHjOzEDDw90tLl5VTYXvkXkOics/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝数据化运营解析</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">大娃火焱社</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCx31vPjTpp0ibIL4yDQibtV2MNsPzfA4pxUkNVzWnh5j9xsEVyXjQhK7y1z2Y0GeB3I/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">软件测试自学免费课—从入门到精通</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">柠檬班</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBGOS47DsaYA9MlKW9pZRYTy92Ric1ZowUHNPDzlyyhNEyrmWBcqjyAicu00ALqsD2FM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">U3D 游戏开发第一季</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">极视教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAz2X5AynPIjNZOYN0MdlKq7iagomFKsO8qjPmxcpMibcgPQbmOrD0sJic2ib3eUujzabE/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">思科工程师速成班</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">SPOTO思博网络</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCYWlxibEU7u0x2Hicov5gFaXZuWP9M8EkI3IFZ62GhN12zfRfc1kibgr9tlBVeqO8o2c/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">微信小程序开发基础教程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">小码哥教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 自定义模块-设计创作热门课程 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>设计创作热门课程</h2>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEB8zbbiaLSSymXZ8dMx95X1SLMCZYE9dWINGpMfCQJhxiaHTzl3mmWKGiaVp6vSmVLc/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PS淘宝美工免费班/PS教程+网店装修+主图海报+PS设计 平面设计 PS设计</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">聚心恒教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCYmUaLvZldpwujMuIrOl2ASImKc636NdqDLiaO3pOy7GntqmgyaGamhS2ZfGictUbwA/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PS教程/摄影后期 人像 商业精修/调色/排版/合成/风光 风景/影楼</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">涵品教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEI9hElN4IyWE69OnqGQZHHsV3WBn0nz1sVUwIT2McZbESgCZo5QZSZ9YjEqolzxI/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝美工实战特训 平面设计 海报设计 主图 详情页 运营 智源教育</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">智源教育学院</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDib4CiaHria9rj4Xm92n7pibice0FTkCG5pmFuFYVgE7Cfjn2lsnn6JECQPiaeuAbTt2bKE/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">室内设计CAD施工图深化【零基础快速入门到精通】</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">艾巴优教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDK2D782nMDD7l49A5QL2Ixibftle5xRGtAsoubmRkKEzeZvYNic2DhFTXcl98X8W9UU/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">【恩维客教育】室内设计3Dmax效果图从零基础到高级</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">恩维客教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCOV8v8t4QrZAqs9eulAEauR0XCKW8uE9UanNXX2Ky9PLCS9lU2ibzaB7bgrZQribGAw/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">日韩插画/漫画/素描：头像人体服装设计/小白课堂【原画人玄璃】</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">原画人</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAgsic78FnJmek3fgAmcwiaJGETs3dJ0P7mhfibOGXkzroVSnrnZBzyLicZ5dL4CAMdpYQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">UG编程实战 产品零件及模具UG数控编程入门到精通</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">云艺帆教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCbWDXibHYL2Usuhp9h7JMia6CibPR3I6weRQMr20zY4dKcuiaWQ7H70Z525dIQxoUmFr8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">UI/UE设计 APP/网页/交互设计/动效设计 高薪实战班</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">米你课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLABMuXQy0IBQzbKNx08Lh7Yy0WQ3l6XEA7SxhFScvwdib6Dv8cwAxev2BgmvRBABzKk/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">日系古风插画/绘画：同人头像立绘/零基础到精通【原画人雪梨】</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">原画人</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDnj7To9XWINNXhkNZKJFrLtnqxJtPuIhkBibThDpWhPcMOukicsK0nU5vc0Mgux8MG8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">AE+C4D栏目包装 影视特效 平面电商 零基础职业化培训课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">芯丝路教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 自定义模块-近30天最多人在学-->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>近30天最多人在学</h2>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBEMLFzic0702YlB52MZdRvGTVNwyKzja6Yy40U7rZBMaya3JiaiaU4plFRRdxyZzAnoM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">Excel-WPS零基础入门(电子表格)</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">部落窝教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAvTRX7AlFtbmIKvXYVe1R8ibcDjATLxAhnF8ZVdJqhIY8yE0U80wD5pJwJVAdQrtE0/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">高大上的PPT设计秘笈</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">绍涵老师</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCWlSAH9HCejribtj2bDgdCmqh3Vyibr1Gej4kh7KRYtHKM0OmGVD5VU0EocghowYUHE/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">从零开始--轻松学习流行演唱</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">玄博SO-E音乐课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC2OJBJK78vUADPFg7MmMAt1u86oyTpp64tUGv7EP3eniat7DKdN0icu3D4I7QZ7MibVE/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">摄影的基础与技巧--1个月入门</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">光影学院</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLClQXpPdjsGjUI6c5kpTib8KfvzXHiaxc7ysgzyTwkPAv0Qv3u7iaP14icSWHywQbdmibkk/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">恋爱学堂--如何正确的和喜欢的人聊天？</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">山本教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBpktEtpZ56BQkMILf0kHWicsanqpRRgmicbiaF2evzia7ObPptuibOFjCD5RaRXTTNg6PI/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">女神男神必修课--1次搞定形象设计</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">欧艾教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC9KTylK5tOOKyYAuR3aQpcvEyiboEsVhp2XQjX01zrnxuw5EhezmjzBUV3bhpiaC2HM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">吉他入门标准教程--零基础自学课</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">果木音乐教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLD8u8JicBMdszoaeJR3ANiawzqhqQ9NVAO4SiaDda0qEarN9yarxibL88vsVDJjKmMOdr0/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">零基础学化妆--变美变漂亮</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">欧艾教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAKcyBnRvjXQojmB5oUsN8dhqAPtibpdbfootEY4UqNT1gPFGZtVhs2byEJph5JdRP4/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">硬笔书法系列，学写一手好字</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优贝壳</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDkpGaC39iarPGaM9XuTaONsiaqMnrgOWumerybSNbpCHnQEHWtYRBItMvSY5qgC5LXc/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">减肥必修课：学一次，瘦一辈子</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">Vincent</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 自定义模块-升职加薪必学职场课-->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>升职加薪必学职场课</h2>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCtKic64cAj7AING71ZgENaXwuLNZBcPCdfjsbLVD15HI6AOg2UerBjKeqD9Iv8jkJc/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">用得上的商学课</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price">¥99.00</span>
+                                    <span class="item-source"><a href="javascript:;">北京老路说管理咨询有限公司</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAkWvzPrwSJjDscxNicI8OqkDk4EYrNFbDLsackU15DzicKCYj6RYicL1FNt8xWqQ4RIU/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">林正刚：职业经理人能力框架</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥399.00</span>
+                                    <span class="item-source"><a href="javascript:;">上海昊尚企业管理咨询中心(有限合伙)</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLD6uoF03Uo3As5491LgFlbXQq3KYIYeNHVBwOBv7Q4hqokS0muYDAnGKCD5jiblYIzk/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">上班族必须学的时间管理课</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥5.00</span>
+                                    <span class="item-source"><a href="javascript:;">众便利</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCPWRP7rV3eueAdxBRsSJr2gkFOuZuVWDVbUhmSNnkurmibWp8GEMNibicdfhia2mSlfAY/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">12堂超级搜索术，快速找到你想找的任何信息！资源！人脉！</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥99.00</span>
+                                    <span class="item-source"><a href="javascript:;">干货帮</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBhWPmLJVsnBpOBZYKJjniaQWHvvDibfb8Ee6RiaUBia7wETuKyfahByGnVJhDrszQlw9U/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">掌控碎片时间--时间管理术</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥69.00</span>
+                                    <span class="item-source"><a href="javascript:;">刘杨</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDFpGViaG4eNE4SF7rWyB6cRuSvicUPRPSs42iavVsNYpribxJ5aGWD9ILBB994mMH30n0/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">教你如何读书，培养终身受用的六大核心能力</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥99.00</span>
+                                    <span class="item-source"><a href="javascript:;">刘杨</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDj7jkQJ8L10UIERr1CQ3ATplNNc3Z94zCZgqzPtjS4Uw1grQd2FGXKZYNJSl8SV3A/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">在职场“混得好”的妙招</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">绍涵老师</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 自定义模块-Office从入门到精通-->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>Office从入门到精通</h2>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCdQG4sicfFLAtWSpVvU3FqK9V3iaN2LswVva73WPibDYbTlCtD6F1mEHt9rEicEiaWlq90/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">Word零基础入门</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">部落窝教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBrehzd5jal0nJG05K46GM9oNEc4zfFJp1wjiaPZjaCCklNOpboypX6ib6WdLKxEHc3A/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">Excel零基础--高效职场办公</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">朱仕平</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAVAg7oq9zg8QzdC8CQ6b3O9f6m12ZLUwzfibreHM0xibYUehtxACeNxZE9apk7HTrt0/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">40分钟！让PPT马上高大上！</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">绍涵老师</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLA2EeKB9s5qSBakOCuEBzYciaTDDNzW7K4ykG1wVa1L1uWtPOCTtQAaK6LcOP6Im1fA/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PPT零基础教学</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">部落窝教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBUpfL6AftAeu6g1U3ySxaeiaj5jiavSMd1rv9J0mnQ1nRKQe0IicnA2h85omHMMicQZtk/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">Excel2013零基础揭秘</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">朱仕平</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBlOzfDic75BXMMcCL1mlmxktBIXVgmEMffBOk7lWqsZVXKIGTic9oPGuDM54zr1icAc0/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">用得上的思维导图课--提升思考与学习能力</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥98.00</span>
+                                    <span class="item-source"><a href="javascript:;">干货帮</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDztjhUCCXl94x3C1ETDhhwU6J9xCqLicoO7SX6j1FJuXarCFAoHdiaYEgvg7YcS9xlY/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PPT速成手册，教你轻松掌握大神制作技巧</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥98.00</span>
+                                    <span class="item-source"><a href="javascript:;">干货帮</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAQrdXWfydfDo5BPL7ek8qQ1GeGwNuDiaPSDqOWpZibTyNztl4TBeccajkCxWdOI6pqk/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">Excel-VBA零基础入门</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">部落窝教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCTKVblY7MC3JgMk6VeeRV96aCvAHsJ1Bqoia5OjjUvQZU1dN3IEzNXG1yCEFkibCqNs/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">高大上的PPT设计秘笈</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price">¥288.00</span>
+                                    <span class="item-source"><a href="javascript:;">绍涵老师</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看全部课程</span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 编程语言 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 直播课 -->
+                    <div class="live-courses">
+                        <h2>免费直播课</h2>
+                        <div class="live-courses-content">
+                            <div class="live-schedule">
+                                <div class="live-schedule-screen">
+                                    <img class="screen-img" alt="课程封面" title="课程封面" src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/510">
+                                    <div class="screen-mask"></div>
+                                    <div class="screen-bd" >
+                                        <div class="screen-infos">
+                                            <div class="course-info">
+                                                <p class="teacher-info">
+                                                    <img src="//thirdqq.qlogo.cn/g?b=sdk&amp;k=Hq5Vmialgf5U2yEQS9NTMWA&amp;s=100&amp;t=0" alt="老师头像">
+                                                    <span class="teacher-name">薇薇老师</span>
+                                                </p>
+                                                <a href="javascript"class="course-link">
+                                                    <span>来自课程：PHP7进阶到架构-Laravel/Redis/Swoole/高并发分布式【六星教育】</span> 
+                                                    <i class="icon-font"></i> 
+                                                </a> 
+                                            </div>
+                                                <p class="course-name"> 
+                                                    <a>PHP+Redis实现京东6.18活动消息推送</a>
+                                                </p>
+                                                <div class="course-status">
+                                                    <p class="text">距离上课<span>00</span>时<span>28</span>分<span>10</span>秒</p> 
+                                                </div> 
+                                                <a id="course-apply" class="course-apply" href="javascript:;">立即报名</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="live-schedule-list nano has-scrollbar"> <!-- 时间轴 --> 
+                                        <div class="time-axis"></div>  
+                                        <ul class="nano-content" tabindex="0">    <!-- 任务项 --> 
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">
+                                                        <span class="item-time item-time--classing">直播中</span>
+                                                        <div class="item-info">
+                                                            <span class="item-name">不能不知道的Python十大应用领域与就业方向</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-icon-live"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">
+                                                        <span class="item-time item-time--classing">直播中</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">阿里经典面试题之单例模式</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-icon-live"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time item-time--classing">直播中</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">Mvc中通用异常处理及log4net日志记录</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-icon-live"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">15:30</span>  
+                                                        <div class="item-info">
+                                                            <span class="item-name">进BATJ必知必会之面试套路</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item task-item--active"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">15:30</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">PHP+Redis实现京东6.18活动消息推送</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">20:00</span>  
+                                                        <div class="item-info">
+                                                            <span class="item-name">基于zookeeper手写实现一个注册中心</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">20:00</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">一节课搞定JVM</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+                                            
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">20:00</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">BATJ面试必问之JVM！</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+                                            
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">20:00</span>  
+                                                        <div class="item-info">
+                                                            <span class="item-name">mysql8新特性之降序索引底层原理分析（一）</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>     <!-- 任务项 --> 
+                                            
+                                            <li class="list-item task-item"> 
+                                                <a class="item-link" href="javascript:;"> 
+                                                    <div class="item-wrap">  
+                                                        <span class="item-time">20:00</span>  
+                                                        <div class="item-info"> 
+                                                            <span class="item-name">如何在60分钟掌握Go基础及加解密知识</span> 
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="item-time-point"></div>  
+                                                </a> 
+                                            </li>   
+                                        </ul> 
+                                        <div class="nano-pane">
+                                            <div class="nano-slider"></div>
+                                        </div>
+                                    </div> 
+                                </div> 
+                        </div>
+                    </div>
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>本周最受欢迎好课
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看Java类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 平面设计 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>平面设计课程
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看平面设计类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 职业技能 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>职业技能课程
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看职业技能类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 高中 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>高中类最受欢迎好课
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看高中类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 实用英语 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>实用英语课程
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看实用英语类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 文艺修养 -->
+            <div class="cate-content-main">
+                <!-- 页面主体内容 -->
+                <div class="cate-container clearfix">
+
+                    <!-- 自定义模块-本周最受欢迎好课 -->
+                    <div class="custom-course">
+                        <div class="course-title">
+                            <h2>本周最受欢迎文艺修养课程
+                                <a class="course-btn-more" href="javascript:;">更多<i class="icon-font"></i></a>
+                            </h2>
+                            <div class="course-line"></div>
+                        </div>
+
+                        <ul class="course-list clearfix">
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCIMKN09tIKh277ES6t63ia1F7qUw8WK8kAu50qoR5ycZ7hQ4LmoYokPEvjoJR8aG04/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">互联网高级java架构课程</a>
+                                </h4>
+                                <div class="item-line clearfix">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">咕泡教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAodLbiaDe06IN0LywLIFUXUsYyiauTWujhrSxsTqZOlkUM1t9ktpz8Zbd1jo1sPrAaM/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">PHP7进阶到架构实战</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">六星教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLC8nV7GgACfic956LBzWe8Mzh4ia4N2a4RFKTydT4MFJCh2I0JzoXqRx70F5GvvqhwDQ/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">JAVA高级开发架构师课程</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">享学课堂</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCEKNszK1hqZW5w0NYpQebvdBI3n0Mfibo7tMp3KysHKdGxzoYXNib4jjiaZP0AgBzYY8/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝不刷单，如何快速累积宝贝权重</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">齐论教育</a></span>
+                                </div>
+                            </li>
+
+                            <li class="course-list-item">
+                                <a class="item-img"><img src="//10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDicmh4npLYUkTWY7eiaK6aLOsiahrmGxWUcWFZZfziajhbLT6Z1ibcFVChXlR8GmdmEz7Q/356?tp=jpg">
+                                </a>
+                                <h4 class="item-disc">
+                                    <a href="javascript:;">淘宝新时代，内容营销</a>
+                                </h4>
+                                <div class="item-line">
+                                    <span class="item-price free">免费</span>
+                                    <span class="item-source"><a href="javascript:;">优梯教育</a></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                            
+                    <!-- 查看全部课程 -->
+                    <div class="course-all">
+                        <a href="javascript:;"><span>查看文艺修养类目全部共 800 门课程 </span> <i class="icon-font"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 热门培训 -->
+            <div class="topic-hot" id="topic-hot">
+                <div class="topic-title">
+                    <h1>热门培训</h1>
+                </div>
+                <div class="topic-tab">
+                    <div class="tab-bar">
+                        <div class="tab-bar-item active" tab-id="0">IT·互联网</div>
+                        <div class="tab-bar-item " tab-id="1">设计·创作</div>
+                        <div class="tab-bar-item " tab-id="2">电商·营销</div>
+                        <div class="tab-bar-item " tab-id="3">职业·考证</div>
+                        <div class="tab-bar-item " tab-id="4">升学·考研</div>
+                        <div class="tab-bar-item " tab-id="5">兴趣·生活</div>
+                        <div class="tab-bar-item " tab-id="6">语言·留学</div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-content-item">
+                            <a href="javascript:;">excel培训</a>  <a href="javascript:;">计算机二级培训</a>  <a href="javascript:;">软件开发培训</a>  <a href="javascript:;">plc编程培训</a>  <a href="javascript:;">vr培训</a>  <a href="javascript:;">算法工程师培训</a>  <a href="javascript:;">大数据培训</a>  <a href="javascript:;">电脑培训</a>  <a href="javascript:;">程序员培训</a>  <a href="javascript:;">ie工程师培训</a>  <a href="javascript:;">安卓系统培训</a>  <a href="javascript:;">seo培训</a>  <a href="javascript:;">sql培训</a>  <a href="javascript:;">思维导图培训</a>  <a href="javascript:;">android培训</a>  <a href="javascript:;">html5培训</a>  <a href="javascript:;">思科培训</a>  <a href="javascript:;">软件测试培训</a>  <a href="javascript:;">计算机编程培训</a>  <a href="javascript:;">网站建设培训</a> 
+                        </div>
+                    
+                        <div class="tab-content-item">
+                            <a href="javascript:;">少儿画画培训</a>  <a href="javascript:;">cnc编程培训</a>  <a href="javascript:;">软装设计培训</a>  <a href="javascript:;">视觉传达设计培训</a>  <a href="javascript:;">影视后期培训</a>  <a href="javascript:;">漫画培训</a>  <a href="javascript:;">设计培训</a>  <a href="javascript:;">服装制作培训</a>  <a href="javascript:;">动画原画培训</a>  <a href="javascript:;">美工培训</a>  <a href="javascript:;">素描培训</a>  <a href="javascript:;">美术培训</a>  <a href="javascript:;">淘宝美工培训</a>  <a href="javascript:;">高考美术培训</a>  <a href="javascript:;">室内设计培训</a>  <a href="javascript:;">摄影培训</a>  <a href="javascript:;">影视特效培训</a>  <a href="javascript:;">3d动画设计培训</a>  <a href="javascript:;">cad培训</a>
+                        </div>
+                    
+                        <div class="tab-content-item">
+                            <a href="javascript:;">电商培训</a> 
+                        </div>
+                        
+                        <div class="tab-content-item">
+                            <a href="javascript:;">注会培训</a>  <a href="javascript:;">工商管理培训</a>  <a href="javascript:;">会计培训</a>  <a href="javascript:;">工程测量员培训</a>
+                        </div>
+                        
+                        <div class="tab-content-item">
+                            <a href="javascript:;">奥数培训</a>  <a href="javascript:;">小学奥数培训</a>  <a href="javascript:;">初中教育培训</a>
+                        </div>
+                        
+                        <div class="tab-content-item">
+                            <a href="javascript:;">寿司培训</a>  <a href="javascript:;">舞蹈培训</a>  <a href="javascript:;">自信培训</a>
+                        </div>
+                        
+                        <div class="tab-content-item">
+                            <a href="javascript:;">西班牙语培训</a>  <a href="javascript:;">托福培训</a>  <a href="javascript:;">bec高级培训</a>  <a href="javascript:;">日语培训</a>  <a href="javascript:;">法语培训</a>  <a href="javascript:;">英语专八培训</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 合作链接 -->
+            <div class="cooperation">
+                <h3 class="cooperation-title">合作链接</h3>
+                <ul class="cooperation-list" id="cooperation-list">
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯大学</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯网教育频道</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯精品课</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯云</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯电脑管家</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯御安全</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">企鹅FM</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯微云</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯文档</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">腾讯游戏学院</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">环球网校</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">中华考试网</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">学神IT教育</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">云中帆教育</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">为课网校</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">中大网校</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">益修学院</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">起点学院</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">人人都是产品经理</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">公务员考试网</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">新东方在线</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">中公公务员网</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">学科网</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">我要自学网</a></li>
+                    <li> <a class="link-cooperation" href="javascript:;">233网校</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===底部=== -->
+        <div class="footer">
+            <i class="icon-font" title="腾讯课堂_专业的在线教育平台"></i>
+            <p>Copyright © 2019 Tencent. All Rights Reserved.</p>
+            <p>深圳市腾讯计算机系统有限公司 版权所有 | <a href="javascript:;">腾讯课堂服务协议</a> | <a href="javascript:;">站点地图</a> | <a href="javascript:;">侵权投诉</a> | <a href="javascript:;">问题反馈</a> | <a href="javascript:;">帮助</a></p>
+        </div>
     </div>
-  </div>
-<script src="res/layui/layui.js"></script>
-<!--[if lt IE 9]>
-  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<script>
-  layui.config({
-    base: 'res/static/js/' 
-  }).use('firm'); 
-</script>
+
+    <!-- --- Test your HTML CODE above this line --- -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
